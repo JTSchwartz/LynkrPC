@@ -11,7 +11,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compile("net.sf.bluecove:bluecove:2.1.0")
+    implementation("net.sf.bluecove:bluecove:2.1.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2")
 }
 
 tasks {
