@@ -1,3 +1,14 @@
+//*******************************************************************************
+//
+//      filename:  server.kt
+//
+//   description:  Runs the Bluetooth server required for wireless connection
+//
+//        author:  Schwartz, Jacob T.
+//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//
+//******************************************************************************
+
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.io.*
@@ -11,7 +22,7 @@ import javax.microedition.io.StreamConnectionNotifier
 class BluetoothServer {
 
     companion object {
-        fun run() {
+        fun runServer() {
             println("Initializing Bluetooth Server")
             val localDevice: LocalDevice = LocalDevice.getLocalDevice()
             println("Server Address: " + localDevice.bluetoothAddress)
@@ -28,8 +39,10 @@ class BluetoothServer {
         GlobalScope.launch {
             when (payloadTokens[0]) {
                 "access" -> ChannelManager.access.send(payloadTokens[1].trim())
+	            "keystroke" -> ChannelManager.keystroke  .send(payloadTokens[1].trim())
                 "power" -> ChannelManager.power.send(payloadTokens[1].trim())
                 "volume" -> ChannelManager.volume.send(payloadTokens[1].trim())
+	            "disconnect" -> runServer()
                 else -> println("Action Item ${payloadTokens[0]} Does Not Exist")
             }
         }
@@ -50,7 +63,7 @@ class BluetoothServer {
 
         val inStream: InputStream = connection.openInputStream()
         val bReader = BufferedReader(InputStreamReader(inStream))
-        val lineRead = bReader.readLine()
+        val lineRead = bReader.readLine() ?: "disconnect"
         println("Message from mobile device: $lineRead")
 
         handlePayload(lineRead)

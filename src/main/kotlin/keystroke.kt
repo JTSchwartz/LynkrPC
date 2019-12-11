@@ -1,9 +1,20 @@
+//*******************************************************************************
+//
+//      filename:  keystroke.kt
+//
+//   description:  Keystroke control module
+//
+//        author:  Schwartz, Jacob T.
+//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//
+//******************************************************************************
+
 import java.awt.AWTException
 import java.awt.Robot
 import java.awt.event.KeyEvent
 
 object Keystroke {
-	val robot = Robot()
+	private val robot = Robot()
 	
     fun alpha() {
 	    try {

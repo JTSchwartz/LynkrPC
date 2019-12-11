@@ -1,3 +1,14 @@
+//*******************************************************************************
+//
+//      filename:  server.kt
+//
+//   description:  Executioner module
+//
+//        author:  Schwartz, Jacob T.
+//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//
+//******************************************************************************
+
 import java.io.File
 import java.util.concurrent.TimeUnit
 
@@ -15,3 +26,4 @@ object Executioner {
             .waitFor(10, TimeUnit.SECONDS)
     }
 }
+

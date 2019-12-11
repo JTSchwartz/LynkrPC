@@ -1,3 +1,14 @@
+//*******************************************************************************
+//
+//      filename:  main.kt
+//
+//   description:  Handles the startup of all program elements and concurrent communication
+//
+//        author:  Schwartz, Jacob T.
+//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//
+//******************************************************************************
+
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
@@ -74,9 +85,9 @@ fun main(args: Array<String>) {
 		}
 	}
 
-    if (args.isNotEmpty() && args[0] == "bluetooth") {
-        BluetoothServer.run()
+    if (args.isNotEmpty() && args[0] == "manual") {
+	    Manual.run()
     } else {
-        Manual.run()
+	    BluetoothServer.runServer()
     }
 }

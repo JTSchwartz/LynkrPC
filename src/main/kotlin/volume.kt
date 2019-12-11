@@ -1,3 +1,14 @@
+//*******************************************************************************
+//
+//      filename:  volume.kt
+//
+//   description:  Volume control module
+//
+//        author:  Schwartz, Jacob T.
+//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//
+//******************************************************************************
+
 object Volume {
     private var muteState = false
 

@@ -1,3 +1,14 @@
+//*******************************************************************************
+//
+//      filename:  manual.kt
+//
+//   description:  Implements a CLI for testing without Bluetooth
+//
+//        author:  Schwartz, Jacob T.
+//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//
+//******************************************************************************
+
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
