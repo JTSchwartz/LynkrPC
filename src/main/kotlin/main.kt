@@ -5,7 +5,7 @@
 //   description:  Handles the startup of all program elements and concurrent communication
 //
 //        author:  Schwartz, Jacob T.
-//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//       Copyright (c) 2019 Schwartz, Jacob T.
 //
 //******************************************************************************
 
@@ -75,13 +75,7 @@ fun main(args: Array<String>) {
 			
 			println("Keystroke Received Action: $action")
 			
-			when (action) {
-				"alpha" -> Keystroke.alpha()
-				"beta" -> Keystroke.beta()
-				"gamma" -> Keystroke.gamma()
-				"delta" -> Keystroke.delta()
-				else -> error("Keystroke Cannot Handle: $action")
-			}
+			Keystroke.run(action)
 		}
 	}
 

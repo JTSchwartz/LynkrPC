@@ -5,7 +5,7 @@
 //   description:  Runs the Bluetooth server required for wireless connection
 //
 //        author:  Schwartz, Jacob T.
-//       Copyright (c) 2019 Schwartz, Jacob T. University of Dayton
+//       Copyright (c) 2019 Schwartz, Jacob T.
 //
 //******************************************************************************
 
