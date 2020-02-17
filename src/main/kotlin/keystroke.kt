@@ -88,6 +88,7 @@ object Keystroke {
 				release.push(key)
 			}
 			
+			robot.autoDelay = 250
 			while (!press.isEmpty()) press.poll()?.let { robot.keyPress(it) }
 			while (release.isNotEmpty()) release.pop()?.let { robot.keyRelease(it) }
 			

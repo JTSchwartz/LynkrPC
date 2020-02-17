@@ -33,6 +33,18 @@ object Volume {
 
         muteState = !muteState
     }
+	
+	fun reportLevel(): Int {
+		val report = Executioner.run("${System.getProperty("user.dir")}\\lib\\SetVol.exe report")
+		
+		println("Report Level: ${report[0].substring(22).trim().toInt()}")
+		
+		return report[0].substring(22).trim().toInt()
+	}
+	
+	fun setLevel(setting: Int) {
+		changeVol(setting.toString())
+	}
 
     private fun changeVol(command: String) {
         val path = "${System.getProperty("user.dir")}\\lib"

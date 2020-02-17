@@ -9,21 +9,32 @@
 //
 //******************************************************************************
 
+import java.io.BufferedReader
 import java.io.File
+import java.io.InputStreamReader
 import java.util.concurrent.TimeUnit
 
-object Executioner {
-    fun run(command: String) {
-        command.runCommand()
-    }
 
-    private fun String.runCommand(workingDir: File = File("/")) {
-        ProcessBuilder(*split(" ").toTypedArray())
-            .directory(workingDir)
-            .redirectOutput(ProcessBuilder.Redirect.INHERIT)
-            .redirectError(ProcessBuilder.Redirect.INHERIT)
-            .start()
-            .waitFor(10, TimeUnit.SECONDS)
-    }
+object Executioner {
+	fun run(command: String): List<String> {
+		return command.runCommand()
+	}
+	
+	private fun String.runCommand(workingDir: File = File("/")): List<String>{
+		val process = ProcessBuilder(*split(" ").toTypedArray())
+			.directory(workingDir)
+			.start()
+		
+		val output = mutableListOf<String>()
+		BufferedReader(InputStreamReader(process.inputStream)).use { reader ->
+			var line: String?
+			while (reader.readLine().also { line = it } != null) output.add(line!!)
+		}
+		
+		process.waitFor(10, TimeUnit.SECONDS)
+		
+		return output
+		// 48
+	}
 }
 
