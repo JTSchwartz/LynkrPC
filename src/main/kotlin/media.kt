@@ -17,18 +17,19 @@ object Media {
 	)
 	
 	fun togglePlay() {
-		controls["PlayPause"]?.let { mediaControl(it) }
+		mediaControl("playpause")
 	}
 	
 	fun nextTrack() {
-		controls["Next"]?.let { mediaControl(it) }
+		mediaControl("next")
 	}
 	
 	fun prevTrack() {
-		controls["Previous"]?.let { mediaControl(it) }
+		mediaControl("prev")
 	}
 	
-	private fun mediaControl(keyCode: Int) {
-		Executioner.run("powershell -command \"\$wshShell = new-object -com wscript.shell; \$wshShell.SendKeys([char]$keyCode)\"")
+	private fun mediaControl(command: String) {
+		val path = "${System.getProperty("user.dir")}\\lib"
+		Executioner.run("$path\\$command.exe ")
 	}
 }

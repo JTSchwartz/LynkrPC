@@ -82,7 +82,7 @@ object Keystroke {
 		val release = Stack<Int?>()
 		
 		try {
-			File("$id.txt").forEachLine { line: String ->
+			File("${System.getProperty("user.dir")}\\lib\\$id.txt").forEachLine { line: String ->
 				val key = keyMap[line]
 				press.add(key)
 				release.push(key)

@@ -20,6 +20,9 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 	implementation(files("lib/SetVol.exe"))
+	implementation(files("lib/prev.exe"))
+	implementation(files("lib/playpause.exe"))
+	implementation(files("lib/next.exe"))
 	implementation(files("lib/bluecove-2.1.1.jar"))
 	implementation("net.sf.bluecove:bluecove:2.1.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2")

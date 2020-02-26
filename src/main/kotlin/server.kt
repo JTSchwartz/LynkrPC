@@ -43,6 +43,7 @@ class BluetoothServer {
 				"media" -> ChannelManager.media.send(payloadTokens[1].trim())
 				"power" -> ChannelManager.power.send(payloadTokens[1].trim())
 				"volume" -> ChannelManager.volume.send(payloadTokens[1].trim())
+				"init" -> println("Connection initialized, sending volume report")
 				"disconnect" -> runServer()
 				else -> println("Action Item ${payloadTokens[0]} Does Not Exist")
 			}
