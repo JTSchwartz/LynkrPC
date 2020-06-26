@@ -1,4 +1,4 @@
-.idea/
 lib/
 /build/
 /.gradle/
+/out/artifacts/lynkrClient_jar/lynkrClient.jar

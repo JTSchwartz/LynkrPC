@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lynkrClient:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="213a6dce-09b1-465f-a21d-99caf3c3aef7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin File" />
+        <option value="TornadoFX Code View" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="GUI" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TwfY4OlXArEoKQHiEHi6G6Osgl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/../../Dependencies" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.25172412" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Kotlin" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jtsch\Workspace\IntelliJ\LynkrClient\src\main\resources" />
+      <recent name="C:\Users\jtsch\Workspace\IntelliJ\LynkrClient\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jtsch\Workspace\IntelliJ\LynkrClient\src\main\kotlin" />
+      <recent name="C:\Users\jtsch\Workspace\IntelliJ\LynkrClient\src\main" />
+      <recent name="C:\Users\jtsch\Workspace\IntelliJ\LynkrClient\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Bluetooth">
+    <configuration name="LynkrClient [build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bluetooth" type="JetRunConfigurationType">
+      <module name="lynkrClient.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.jtschwartz.lynkrClient.ApplicationKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.LynkrClient [build]" />
+      <item itemvalue="Kotlin.Bluetooth" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="213a6dce-09b1-465f-a21d-99caf3c3aef7" name="Default Changelist" comment="" />
+      <created>1574376122609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574376122609</updated>
+      <workItem from="1574376127001" duration="2688000" />
+      <workItem from="1574378858130" duration="780000" />
+      <workItem from="1574525299469" duration="412000" />
+      <workItem from="1574525735884" duration="15795000" />
+      <workItem from="1574778313731" duration="616000" />
+      <workItem from="1574791262484" duration="109000" />
+      <workItem from="1574799001049" duration="623000" />
+      <workItem from="1574962889847" duration="778000" />
+      <workItem from="1575577515239" duration="49000" />
+      <workItem from="1575724500972" duration="1334000" />
+      <workItem from="1575727183895" duration="12551000" />
+      <workItem from="1575818623376" duration="6515000" />
+      <workItem from="1575904121876" duration="2284000" />
+      <workItem from="1575937644521" duration="599000" />
+      <workItem from="1575939893365" duration="671000" />
+      <workItem from="1576024759376" duration="614000" />
+      <workItem from="1576084593293" duration="2185000" />
+      <workItem from="1576874634574" duration="9000" />
+      <workItem from="1578507393926" duration="600000" />
+      <workItem from="1580181258365" duration="614000" />
+      <workItem from="1580243041198" duration="2004000" />
+      <workItem from="1580349892638" duration="4141000" />
+      <workItem from="1580354672536" duration="1930000" />
+      <workItem from="1580414228209" duration="3227000" />
+      <workItem from="1580481980289" duration="3585000" />
+      <workItem from="1580493618338" duration="395000" />
+      <workItem from="1580575543072" duration="1311000" />
+      <workItem from="1580776730553" duration="1902000" />
+      <workItem from="1581297186236" duration="610000" />
+      <workItem from="1581513014407" duration="283000" />
+      <workItem from="1581513330320" duration="32000" />
+      <workItem from="1581903374502" duration="3396000" />
+      <workItem from="1581909296742" duration="12000" />
+      <workItem from="1582248149948" duration="170000" />
+      <workItem from="1582671921641" duration="3170000" />
+      <workItem from="1582677732266" duration="2546000" />
+      <workItem from="1582832320189" duration="3947000" />
+      <workItem from="1582920763848" duration="7783000" />
+      <workItem from="1583855537558" duration="998000" />
+      <workItem from="1583865119486" duration="118000" />
+      <workItem from="1583865268643" duration="1090000" />
+      <workItem from="1583964304084" duration="462000" />
+      <workItem from="1583964785005" duration="2818000" />
+      <workItem from="1584903919381" duration="611000" />
+      <workItem from="1593203040805" duration="149000" />
+      <workItem from="1593203249265" duration="1295000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <created>1574531124696</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574531124696</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Successful communication">
+      <created>1575820690955</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575820690955</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Copyrights">
+      <created>1576084979727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576084979727</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Increased customizability of keystrokes">
+      <created>1580356344521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580356344521</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Sends back the current volume, working on Media Controls">
+      <created>1581906927495</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581906927495</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Working volume control via AHK compiled scripts">
+      <created>1582677936690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582677936690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Reworked worked architecture">
+      <created>1582920882818</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582920882818</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Reworked worked architecture">
+      <created>1582921071156</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582921071156</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added config files">
+      <created>1593204393558</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593204393558</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <MESSAGE value="Successful communication" />
+    <MESSAGE value="Copyrights" />
+    <MESSAGE value="Increased customizability of keystrokes" />
+    <MESSAGE value="Sends back the current volume, working on Media Controls" />
+    <MESSAGE value="Working volume control via AHK compiled scripts" />
+    <MESSAGE value="Reworked worked architecture" />
+    <MESSAGE value="Added config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added config files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="332" y="0" key="CommitChangelistDialog2" timestamp="1593204390629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="332" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593204390629" />
+    <state x="147" y="64" key="DiffContextDialog" timestamp="1593204430209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="64" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1593204430209" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1593203872705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593203872705" />
+    <state x="361" y="126" key="Vcs.Push.Dialog.v2" timestamp="1593204437671">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="126" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593204437671" />
+    <state x="266" y="0" key="new project wizard" timestamp="1584904528517">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="266" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1584904528517" />
+  </component>
+</project>
