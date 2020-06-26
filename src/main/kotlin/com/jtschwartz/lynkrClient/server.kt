@@ -72,7 +72,11 @@ class BluetoothServer {
 		
 		val outStream: OutputStream = connection.openOutputStream()
 		val pWriter = PrintWriter(OutputStreamWriter(outStream))
-		pWriter.write("volume|${Volume.reportLevel()}\r\n")
+		try {
+			pWriter.write("volume|${Volume.reportLevel()}\r\n")
+		} catch (e: StringIndexOutOfBoundsException) {
+			println("Server was unable to return current volume")
+		}
 		pWriter.flush()
 		pWriter.close()
 		streamConnNotifier.close()

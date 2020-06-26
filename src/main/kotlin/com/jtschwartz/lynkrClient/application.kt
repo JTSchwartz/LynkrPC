@@ -22,90 +22,64 @@ object ChannelManager {
 	val volume = Channel<String>()
 }
 
-fun main(args: Array<String>) {
+fun main() {
 	Access; Keystroke; Media; Power; Volume
 	
-	GlobalScope.launch {
-		while (true) {
-			val action = ChannelManager.access.receive()
-			
-			println("com.jtschwartz.lynkrClient.Access Received Action: $action")
-			
-			when (action) {
-				"logout" -> Access.logout()
-				"lock" -> Access.lock()
-				else -> error("com.jtschwartz.lynkrClient.Access Cannot Handle: $action")
-			}
-		}
-		
+	for (module in listOf(
+		Pair(ChannelManager.access, ::accessParser),
+		Pair(ChannelManager.keystroke, {payload: String -> Keystroke.run(payload)}),
+		Pair(ChannelManager.media, ::mediaParser),
+		Pair(ChannelManager.power, ::powerParser),
+		Pair(ChannelManager.volume, ::volumeParser))) {
+		val (channel, parser) = module
+		launchCoroutine(channel, parser)
 	}
 	
+	BluetoothServer.runServer()
+	//	launch<Window>(args)
+}
+
+private fun launchCoroutine(channel: Channel<String>, function: (String) -> Unit) {
 	GlobalScope.launch {
-		while (true) {
-			val action = ChannelManager.media.receive()
-			
-			println("Media Received Action: $action")
-			
-			when (action) {
-				"next" -> Media.nextTrack()
-				"playpause" -> Media.togglePlay()
-				"previous" -> Media.prevTrack()
-				else -> error("Media Cannot Handle: $action")
-			}
-		}
-		
+		while (true) function(channel.receive())
 	}
-	
-	GlobalScope.launch {
-		while (true) {
-			val action = ChannelManager.power.receive()
-			
-			println("Power Received Action: $action")
-			
-			when (action) {
-				"shutdown" -> Power.shutdown()
-				"restart" -> Power.restart()
-				"hibernate" -> Power.hibernate()
-				else -> error("Power Cannot Handle: $action")
-			}
-		}
-		
+}
+
+private fun accessParser(payload: String) {
+	when (payload) {
+		"logout" -> Access.logout()
+		"lock"   -> Access.lock()
+		else     -> error("Access Cannot Handle: $payload")
 	}
-	
-	GlobalScope.launch {
-		while (true) {
-			val action = ChannelManager.volume.receive()
-			
-			println("Volume Received Action: $action")
-			
-			when (action) {
-				"increase" -> Volume.increase()
-				"decrease" -> Volume.decrease()
-				"mute" -> Volume.toggleMute()
-				else -> {
-					try {
-						Volume.setLevel(action.toInt())
-					} catch (ex: NumberFormatException) {
-						ex.printStackTrace()
-					}
-				}
-			}
-		}
+}
+
+private fun mediaParser(payload: String) {
+	when (payload) {
+		"next"      -> Media.nextTrack()
+		"playpause" -> Media.togglePlay()
+		"previous"  -> Media.prevTrack()
+		else        -> error("Media Cannot Handle: $payload")
 	}
-	
-	GlobalScope.launch {
-		while (true) {
-			val action = ChannelManager.keystroke.receive()
-			
-			println("Keystroke Received Action: $action")
-			
-			Keystroke.run(action)
-		}
+}
+
+private fun powerParser(payload: String) {
+	when (payload) {
+		"shutdown"  -> Power.shutdown()
+		"restart"   -> Power.restart()
+		"hibernate" -> Power.hibernate()
+		else        -> error("Power Cannot Handle: $payload")
 	}
-	
-	if (args.isNotEmpty() && args[0] == "manual") {
-		Manual.run()
-	} else {
-		BluetoothServer.runServer()
+}
+
+private fun volumeParser(payload: String) {
+	when (payload) {
+		"increase" -> Volume.increase()
+		"decrease" -> Volume.decrease()
+		"mute"     -> Volume.toggleMute()
+		else       -> try {
+			Volume.setLevel(payload.toInt())
+		} catch (ex: NumberFormatException) {
+			ex.printStackTrace()
+		}
 	}
 }

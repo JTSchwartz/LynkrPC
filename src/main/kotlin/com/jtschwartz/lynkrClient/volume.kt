@@ -38,9 +38,13 @@ object Volume {
 	fun reportLevel(): Int {
 		val report = Executioner.run("${System.getProperty("user.dir")}\\lib\\SetVol.exe report")
 		
-		println("Report Level: ${report[0].substring(22).trim().toInt()}")
-		
-		return report[0].substring(22).trim().toInt()
+		try {
+			println("Report Level: ${report[0].substring(22).trim().toInt()}")
+			
+			return report[0].substring(22).trim().toInt()
+		} catch (e: StringIndexOutOfBoundsException) {
+			throw e
+		}
 	}
 	
 	fun setLevel(setting: Int) {
